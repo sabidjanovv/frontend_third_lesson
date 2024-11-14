@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('/images/mountains.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 30vh;
+    position: relative;
+}
+
+.header-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0 auto;
+    margin-top: 10px;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+.header-content button {
+    background-color: #f78c22;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.header-content button:hover {
+    background-color: #a24701;
+}
+
+.category-tabs {
+    display: flex;
+    color: #333;
+    background-color: #fff;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.category-tabs p {
+    padding: 20px 40px;
+    cursor: pointer;
+    color: #696161;
+}
+
+.featured-posts, .most-recent {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.posts-container, .recent-posts-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.featured-posts {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.featured-posts h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.posts-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.post.featured {
+    position: relative;
+    width: 48%;
+    color: white;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.post.featured img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f78c22;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.post-details {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.most-recent {
+    color: #333;
+    background-color: #ececec;
+    justify-content: center;
+    gap: 15px;
+    margin:0 auto;
+}
+
+.most-recent .posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #ececec;
+}
+
+.most-recent .post {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-image: url('/images/village.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-color: #ececec;
+    height: 25vh;
+    position: relative;
+}
+
+.footer-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.footer-content form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-content input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.footer-content button {
+    background-color: #f78c22;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-content button:hover {
+    background-color: #a24701;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin-top: 300px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    opacity: 0.8;
+}
